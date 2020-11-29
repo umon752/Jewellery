@@ -1,0 +1,13 @@
+.navbar-nav {
+    .nav-link {
+        &:hover {
+            @include lg {
+                opacity: .6;
+                background: transparent !important;
+            }
+        }
+        &:focus {
+            background: transparent !important;
+        }
+    }
+}

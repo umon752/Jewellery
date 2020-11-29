@@ -1,0 +1,27 @@
+.productsItem {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @include lg {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+
+    &__description {
+        @include md {
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    &__description__favorite {
+        margin-bottom: 40px;
+        color: black;
+        &:hover {
+            color: $primary;
+        }
+        @include lg {
+            margin-bottom: 80px;
+        }
+    }
+}

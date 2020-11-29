@@ -1,0 +1,85 @@
+---
+title: CHANEL N°5 | D’PERFUME
+layout: ./app/nav.ejs
+engine: ejs
+current: product_detail
+---
+
+<section class="productsItem">
+  <div class="container">
+    <div class="row position-relative">
+      <div class="col-md-8 mb-7" data-aos="fade-up">
+        <img class="img-fluid" src="./assets/images/product1.jpg" alt="CHANEL N°5">
+      </div>
+      <div class="col-md-4 productsItem__description mb-10" data-aos="fade-up">
+        <h2 class="font-weight-bold">CHANEL N°5</h2>
+        <p class="h5 font-weight-normal mb-8">N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。</p>
+        <h3 class="h5 font-weight-normal mb-3">NT4,980</h3>
+        <div class="input-group mb-2">
+          <select class="custom-select" id="inputGroupSelect04" aria-label="add to Shopping Cart">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          <div class="input-group-append">
+            <button class="btn btn-primary py-4" type="button" data-toggle="modal" data-target="#addCart">加入購物車</button>
+          </div>
+        </div>
+        <a href="#" class="productsItem__description__favorite material-icons font-size-base d-flex" data-toggle="modal"
+          data-target="#addFavorite"><span class="font-size-lg text-primary">favorite</span>加入我的收藏</a>
+        <h4 class="h6 font-weight-bold mb-2">商品購買須知</h4>
+        <p class="mb-5">產品因拍攝關係顏色可能略有差異，實際以廠商出貨為主。 商品情境照為示意用，僅商品主體不包含其他配件，請以規格內容物為主。 D’Perfume
+          盡可能確保所列商品備貨充足，但偶爾仍會有產品售罄的情況。如您所訂購的商品庫存不足，我們將盡快以電子郵件通知您。任何訂單變動均會在訂單總額與出貨訊息內更新。</p>
+
+        <h4 class="h6 font-weight-bold mb-2">退換貨須知</h4>
+        <p>依《消費者保護法》的規定，於全站購物皆享有商品到貨【七日猶豫期】（含例假日）之權益。若收到的商品有任何問題，可於猶豫期內申請退貨。
+          CHANEL N°5
+          N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。</p>
+      </div>
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-6 mb-4 mb-md-7" data-aos="fade-up">
+            <img class="img-fluid" src="./assets/images/product2.jpg" alt="CHANEL N°5">
+          </div>
+          <div class="col-md-6 mb-4 mb-md-7" data-aos="fade-up">
+            <img class="img-fluid" src="./assets/images/product3.jpg" alt="CHANEL N°5">
+          </div>
+        </div>
+        <img class="img-fluid" src="./assets/images/product1.jpg" alt="CHANEL N°5" data-aos="fade-up">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 已加入購物車 -->
+<div class="modal fade" id="addCart" tabindex="-1" aria-labelledby="addCart" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <p class="font-size-lg font-weight-bold text-center text-primary mb-0" id="addCart">已加入購物車</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 已加入收藏 -->
+<div class="modal fade" id="addFavorite" tabindex="-1" aria-labelledby="addFavorite" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <p class="font-size-lg font-weight-bold text-center text-primary mb-0" id="addFavorite">已加入我的收藏</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+<script src="./assets/js/vendors.js"></script>
+<script src="./assets/js/all.js"></script>

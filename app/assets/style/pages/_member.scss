@@ -1,0 +1,33 @@
+.member {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @include lg {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+
+    &__sidebar__link {
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 0;
+            height: 2px;
+            background: $primary;
+            position: absolute;
+            bottom: -3px;
+            left: 50%;
+            transition: all 0.25s ease;
+            transform: translate(-50%);
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+
+        &.active::after {
+            width: 100%;
+        }
+    }
+}

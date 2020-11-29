@@ -1,0 +1,17 @@
+.login {
+    padding-top: 40px;
+    padding-bottom: 106px;
+
+    @include lg {
+        padding-top: 80px;
+        padding-bottom: 82px;
+    }
+
+    &__img {
+        @include img-cover(220px);
+
+        @include lg {
+            height: 730px;
+        }
+    }
+}

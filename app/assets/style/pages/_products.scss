@@ -1,0 +1,30 @@
+.products {
+    padding-top: 42px;
+    padding-bottom: 40px;
+
+    @include lg {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+
+    .card {
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        transition: all .5s;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 3px 4px rgba(143, 143, 143, 0.5);
+            transition: all .5s;
+        }
+    }
+
+    &__item__img {
+        @include img-cover(165px);
+
+        @include lg {
+            height: 225px;
+        }
+    }
+}

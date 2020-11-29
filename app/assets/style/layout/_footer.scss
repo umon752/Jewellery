@@ -1,0 +1,22 @@
+footer {
+    .nav-link {
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}
+
+.footer__logo {
+    background-image: url("../images/d’Perfumew.png");
+    width: 128px;
+    height: 38px;
+    background-size: contain;
+    overflow: hidden;
+    text-indent: 101%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:hover {
+        opacity: .5;
+    }
+}

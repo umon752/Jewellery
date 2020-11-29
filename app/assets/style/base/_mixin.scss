@@ -1,0 +1,43 @@
+/* RWD斷點(BS4) */
+// phone
+@mixin md {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+// pad
+@mixin lg {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+
+
+/* 記住CSS */
+@mixin bg-cover($url, $height) {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url($url);
+    height: $height;
+}
+@mixin img-cover($height) {
+    height: $height;
+    object-fit: cover;
+    object-position: center center;
+}
+
+@mixin border-bold($color, $hover-color, $bg) {
+    border: 2px solid $color;
+    color: $color;
+
+    &:hover {
+        border: 2px solid $hover-color;
+        color: $hover-color;
+        background: $bg;
+    }
+}
+
+

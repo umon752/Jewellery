@@ -18,7 +18,9 @@
 
     &__list__img {
         @include img-cover(350px);
-
+        @include md {
+            height: auto;
+        }
         @include lg {
             height: 1080px;
         }

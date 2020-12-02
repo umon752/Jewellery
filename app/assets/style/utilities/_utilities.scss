@@ -6,11 +6,6 @@
     @include border-bold(black, white, black);
 }
 
-/* text-decoration */
-.line-through {
-    text-decoration: line-through;
-}
-
 /* cursor */
 .cursor-pointer {
     cursor: pointer;

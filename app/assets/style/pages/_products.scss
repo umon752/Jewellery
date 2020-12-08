@@ -2,7 +2,7 @@
     padding-top: 42px;
     padding-bottom: 40px;
 
-    @include lg {
+    @include media-breakpoint-up(lg) {
         padding-top: 80px;
         padding-bottom: 60px;
     }
@@ -23,7 +23,7 @@
     &__item__img {
         @include img-cover(165px);
 
-        @include lg {
+        @include media-breakpoint-up(lg) {
             height: 225px;
         }
     }

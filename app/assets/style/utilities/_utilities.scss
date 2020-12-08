@@ -2,6 +2,7 @@
 .border-bold-white {
     @include border-bold(white, $primary-light, rgba(255, 255, 255, 0.452));
 }
+
 .border-bold-black {
     @include border-bold(black, white, black);
 }
@@ -79,14 +80,14 @@ $font-sizes: (base: $font-size-base,
 // 加上斷點
 @include font-sizes();
 
-@include md {
+@include media-breakpoint-up(md) {
     @include theme-colors(-md);
     @include h1-h6(-md);
     @include font-sizes(-md);
     @include width(-md);
 }
 
-@include lg {
+@include media-breakpoint-up(lg) {
     @include theme-colors(-lg);
     @include h1-h6(-lg);
     @include font-sizes(-lg);

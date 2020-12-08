@@ -1,7 +1,7 @@
 .banner {
     @include bg-cover("../images/index1.jpg", 480px);
 
-    @include lg {
+    @include media-breakpoint-up(lg) {
         height: 870px;
     }
 }
@@ -11,17 +11,19 @@
         width: 100%;
         @include img-cover(350px);
 
-        @include lg {
+        @include media-breakpoint-up(lg) {
             height: 555px;
         }
     }
 
     &__list__img {
         @include img-cover(350px);
-        @include md {
+
+        @include media-breakpoint-up(md) {
             height: auto;
         }
-        @include lg {
+
+        @include media-breakpoint-up(lg) {
             height: 1080px;
         }
     }
@@ -31,7 +33,7 @@
     &__item__img {
         @include img-cover(350px);
 
-        @include lg {
+        @include media-breakpoint-up(lg) {
             height: 540px;
         }
     }
@@ -80,7 +82,7 @@
         border: 2px solid $primary;
         flex-grow: 1;
 
-        @include lg {
+        @include media-breakpoint-up(lg) {
             flex-grow: 0;
             width: 219px;
         }

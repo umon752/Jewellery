@@ -2,13 +2,13 @@
     padding-top: 40px;
     padding-bottom: 40px;
 
-    @include lg {
+    @include media-breakpoint-up(lg) {
         padding-top: 80px;
         padding-bottom: 60px;
     }
 
     &__description {
-        @include md {
+        @include media-breakpoint-up(md) {
             position: absolute;
             right: 0;
         }
@@ -17,10 +17,12 @@
     &__description__favorite {
         margin-bottom: 40px;
         color: black;
+
         &:hover {
             color: $primary;
         }
-        @include lg {
+
+        @include media-breakpoint-up(lg) {
             margin-bottom: 80px;
         }
     }

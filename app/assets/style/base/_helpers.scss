@@ -1,20 +1,3 @@
-/* RWD斷點(BS4) */
-// phone
-@mixin md {
-    @media (min-width: 768px) {
-        @content;
-    }
-}
-
-// pad
-@mixin lg {
-    @media (min-width: 992px) {
-        @content;
-    }
-}
-
-
-
 /* 記住CSS */
 @mixin bg-cover($url, $height) {
     background-size: cover;
@@ -23,6 +6,7 @@
     background-image: url($url);
     height: $height;
 }
+
 @mixin img-cover($height) {
     height: $height;
     object-fit: cover;
@@ -39,5 +23,3 @@
         background: $bg;
     }
 }
-
-

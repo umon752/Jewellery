@@ -56,10 +56,11 @@ $colors: map-merge(("blue": $blue,
     "gray-dark": $gray-800),
   $colors);
 
-$primary: #916019 !default;
-$primary-light: #AC8A46 !default;
+$primary: #d4a572 !default;
+$primary-dark: #d69a51 !default;
+$primary-light: #f5d8b4 !default;
 $secondary: #8D8D8D !default;
-$secondary-dark: #707070 !default;
+$secondary-dark: #7a7a7a !default;
 $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
@@ -69,6 +70,7 @@ $dark: $gray-800 !default;
 
 $theme-colors: () !default;
 $theme-colors: map-merge(("primary": $primary,
+    "primary-dark": $primary-dark,
     "primary-light": $primary-light,
     "secondary": $secondary,
     "secondary-dark": $secondary-dark,
@@ -145,7 +147,7 @@ $spacers: map-merge((0: 0,
     14: ($spacer * 3.5),
     15: ($spacer * 3.75),
     16: ($spacer * 4),
-  ),
+    17: ($spacer * 10)),
   $spacers);
 
 // This variable affects the `.h-*` and `.w-*` classes.
@@ -240,7 +242,7 @@ $box-shadow-sm: 0 .125rem .25rem rgba($black, .075) !default;
 $box-shadow: 0 .5rem 1rem rgba($black, .15) !default;
 $box-shadow-lg: 0 1rem 3rem rgba($black, .175) !default;
 
-$component-active-color: $primary-light !default;
+$component-active-color: $primary !default;
 $component-active-bg: transparent !default;
 
 $caret-width: .3em !default;

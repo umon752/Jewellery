@@ -6,7 +6,7 @@ img {
 }
 
 a {
-    transition: all linear 300ms;
+    transition: all linear 200ms;
 
     &:hover {
         text-decoration: none;
@@ -16,4 +16,8 @@ a {
 ul {
     list-style: none;
     padding: 0;
+}
+
+input:focus {
+    outline: none;
 }

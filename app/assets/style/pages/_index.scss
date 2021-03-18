@@ -1,22 +1,20 @@
 .banner {
-    @include bg-cover("../images/index1.jpg", 480px);
+    @include bg-cover("../images/banner_header.jpg", 480px);
 
     @include media-breakpoint-up(lg) {
         height: 870px;
     }
 }
 
-.intro {
-    &__img {
-        width: 100%;
-        @include img-cover(350px);
+.introImg {
+    width: 100%;
+    @include img-cover(350px);
 
-        @include media-breakpoint-up(lg) {
-            height: 555px;
-        }
+    @include media-breakpoint-up(lg) {
+        height: 555px;
     }
 
-    &__list__img {
+    &__list {
         @include img-cover(350px);
 
         @include media-breakpoint-up(md) {
@@ -75,7 +73,7 @@
 }
 
 .subscription {
-    @include bg-cover("../images/index10.jpg", 600px);
+    @include bg-cover("../images/banner_footer.jpg", 600px);
     padding-bottom: 112px;
 
     &__input {

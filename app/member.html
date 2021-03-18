@@ -1,8 +1,10 @@
 ---
-title: 會員中心 | D’PERFUME
-layout: ./app/member_nav.ejs
+title: 會員中心 | Jewellery
+layout: ./app/ejs/layout.ejs
 engine: ejs
 current: member
+nav: normal
+subscription: none
 ---
 
 <section class="member container">
@@ -85,7 +87,8 @@ current: member
                             </div>
                         </div>
                         <div class="form-group row text-secondary align-items-start">
-                            <label for="staticDeliveryAddress" class="col-3 col-md-4 col-lg-2 col-form-label">配送地址</label>
+                            <label for="staticDeliveryAddress"
+                                class="col-3 col-md-4 col-lg-2 col-form-label">配送地址</label>
                             <div class="col-9 col-md-8 col-lg-6">
                                 <select class="form-control mb-2" id="staticDeliveryAddress">
                                     <option>台灣及離島</option>
@@ -102,7 +105,7 @@ current: member
                                 </div>
                                 <input type="text" class="form-control text-secondary mb-4" placeholder="請輸入地址"
                                     id="staticDeliveryAddress">
-                                <input type="submit" class="btn btn-primary d-block" value="確定修改">
+                                <input type="submit" class="btn btn-primary text-white d-block" value="確定修改">
                             </div>
                         </div>
                     </form>
@@ -125,7 +128,7 @@ current: member
                             <label for="checkPassword" class="col-3 col-lg-2 col-form-label">確認密碼</label>
                             <div class="col-9 col-lg-6">
                                 <input type="password" class="form-control text-secondary mb-4" id="checkPassword">
-                                <input type="submit" class="btn btn-primary d-block" value="變更密碼">
+                                <input type="submit" class="btn btn-primary text-white d-block" value="變更密碼">
                             </div>
                         </div>
                     </form>
@@ -133,7 +136,7 @@ current: member
                 <div class="col-12 col-lg-4 mb-10">
                     <div class="d-flex align-items-center mb-6">
                         <h2 class="d-flex align-items-center h6 text-secondary mr-1 mb-0">
-                        <span class="material-icons text-black d-block">person</span>
+                            <span class="material-icons text-black d-block">person</span>
                             會員編碼</h2>
                         <span class="font-size-lg text-secondary font-weight-bold">T00020080615</span>
                     </div>

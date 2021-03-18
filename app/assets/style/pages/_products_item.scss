@@ -7,6 +7,15 @@
         padding-bottom: 60px;
     }
 
+    &__img {
+        @include img-cover(220px);
+        width: 100%;
+
+        @include media-breakpoint-up(md) {
+            height: 460px;
+        }
+    }
+
     &__description {
         @include media-breakpoint-up(md) {
             position: absolute;

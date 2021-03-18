@@ -1,6 +1,6 @@
 /* border */
 .border-bold-white {
-    @include border-bold(white, $primary-light, rgba(255, 255, 255, 0.452));
+    @include border-bold(white, $primary-dark, rgba(255, 255, 255, 0.452));
 }
 
 .border-bold-black {

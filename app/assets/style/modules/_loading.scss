@@ -1,0 +1,65 @@
+.loading {
+
+    &__block {
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 100%;
+            box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0.6);
+            transform: skewX(45deg) translateX(100px);
+            animation: reflective 2.5s .5s infinite;
+        }
+
+        &__img {
+            animation: fade-up .5s;
+        }
+    }
+
+    &--fadeOut {
+        display: none !important;
+        opacity: 0;
+        transition: all .5s;
+    }
+}
+
+@keyframes fade-up {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    60% {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes reflective {
+    0% {
+        transform: skewX(45deg) translateX(100px);
+    }
+
+    25% {
+        transform: skewX(45deg) translateX(-400px);
+    }
+
+    50% {
+        transform: skewX(45deg) translateX(-400px) translateY(120px);
+    }
+
+    75% {
+        transform: skewX(45deg) translateX(0px) translateY(120px);
+    }
+
+    100% {
+        transform: skewX(45deg) translateX(100px) translateY(0px);
+    }
+}

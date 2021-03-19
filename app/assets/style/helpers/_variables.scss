@@ -60,13 +60,13 @@ $primary: #d4a572 !default;
 $primary-dark: #d69a51 !default;
 $primary-light: #f5d8b4 !default;
 $secondary: #8D8D8D !default;
-$secondary-dark: #7a7a7a !default;
+$secondary-dark: #6b6b6b !default;
 $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
 $danger: $red !default;
 $light: #E0E0E0 !default;
-$dark: $gray-800 !default;
+$dark: #333333 !default;
 
 $theme-colors: () !default;
 $theme-colors: map-merge(("primary": $primary,
@@ -815,7 +815,7 @@ $pagination-padding-y-lg: .75rem !default;
 $pagination-padding-x-lg: 1.5rem !default;
 $pagination-line-height: 1.25 !default;
 
-$pagination-color: $black !default;
+$pagination-color: $dark !default;
 $pagination-bg: $white !default;
 $pagination-border-width: 0 !default;
 $pagination-border-color: $gray-300 !default;

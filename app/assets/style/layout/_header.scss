@@ -1,4 +1,5 @@
 .logo {
+    // border: 1px solid #000;
     width: 128px;
     background-image: url("../images/logo.svg");
     background-size: contain;
@@ -6,6 +7,10 @@
     text-indent: 101%;
     background-repeat: no-repeat;
     background-position: center;
+
+    @include media-breakpoint-up(lg) {
+        width: 150px;
+    }
 }
 
 .navbar__cart__icon {

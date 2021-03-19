@@ -11,7 +11,7 @@
     @include img-cover(350px);
 
     @include media-breakpoint-up(lg) {
-        height: 555px;
+        height: 500px;
     }
 
     &__list {
@@ -22,7 +22,7 @@
         }
 
         @include media-breakpoint-up(lg) {
-            height: 1080px;
+            height: 1000px;
         }
     }
 }

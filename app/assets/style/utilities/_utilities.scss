@@ -4,12 +4,19 @@
 }
 
 .border-bold-black {
-    @include border-bold(black, white, black);
+    @include border-bold($dark, white, $dark);
 }
 
 /* cursor */
 .cursor-pointer {
     cursor: pointer;
+}
+
+/* hover */
+.hover-text-white {
+    &:hover {
+        color: white;
+    }
 }
 
 

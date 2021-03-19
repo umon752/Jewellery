@@ -1,0 +1,15 @@
+.subscription {
+    @include bg-cover("../images/banner_footer.jpg", 600px);
+    padding-bottom: 112px;
+    background-attachment: fixed;
+
+    &__input {
+        border: 2px solid $primary;
+        flex-grow: 1;
+
+        @include media-breakpoint-up(lg) {
+            flex-grow: 0;
+            width: 219px;
+        }
+    }
+}

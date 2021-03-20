@@ -1,6 +1,30 @@
 "use strict";
 
-var time = 1800;
+var time = 2000;
+/* Anime */
+
+anime.timeline({
+  loop: true
+}).add({
+  targets: '.loading__block__img',
+  translateX: [40, 0],
+  translateZ: 0,
+  opacity: [0, 1],
+  easing: "easeOutExpo",
+  duration: 450,
+  delay: function delay(el, i) {
+    return 500 + 30 * i;
+  }
+}).add({
+  targets: '.loading__block__img',
+  translateX: [0, -30],
+  opacity: [1, 0],
+  easing: "easeInExpo",
+  duration: 450,
+  delay: function delay(el, i) {
+    return 100 + 30 * i;
+  }
+});
 $(document).ready(function () {
   /* 1 秒後開始執行 */
   setTimeout(function () {

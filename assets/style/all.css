@@ -10743,7 +10743,11 @@ input:focus {
           animation: reflective 2.5s 1s infinite; }
 
 .loading__block__img {
+  height: 50px;
   -webkit-box-reflect: below -0.8rem linear-gradient(transparent, #d4a572); }
+  @media (min-width: 768px) {
+    .loading__block__img {
+      height: 100%; } }
 
 @-webkit-keyframes reflective {
   0% {

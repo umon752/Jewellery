@@ -22,7 +22,7 @@ anime.timeline({
   });
 
 $(document).ready(function () {
-  /* 1 秒後開始執行 */
+  /* 2 秒後開始執行 */
   setTimeout(function () {
     // 設定 loading 畫面消失
     $('.loading').addClass('loading--fadeOut');

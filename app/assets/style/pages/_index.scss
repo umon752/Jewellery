@@ -1,9 +1,9 @@
 .banner {
     @include bg-cover("../images/banner_header.jpg", 480px);
-    background-attachment: fixed;
 
     @include media-breakpoint-up(lg) {
         height: 870px;
+        background-attachment: fixed;
     }
 }
 

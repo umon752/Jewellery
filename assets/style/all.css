@@ -10831,7 +10831,9 @@ input:focus {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
-    -webkit-appearance: none; }
+    -webkit-appearance: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
     @media (min-width: 768px) {
       .subscription__input {
         -webkit-box-flex: 0;

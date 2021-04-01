@@ -9,8 +9,6 @@
     &__input {
         border: 2px solid $primary;
         flex-grow: 1;
-        // 解決 safari input 出現圓角
-        -webkit-appearance: none;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
 

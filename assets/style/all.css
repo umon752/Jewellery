@@ -10718,7 +10718,9 @@ ul {
   padding: 0; }
 
 input {
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
 
 button,
 input:focus {

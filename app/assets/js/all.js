@@ -1,11 +1,11 @@
 const time = 2000;
 
 /* Anime */
-anime.timeline({
+let animation = anime.timeline({
     loop: true
   })
   .add({
-    targets: '.loading__block__img',
+    targets: '.js-loading-block-img',
     translateX: [40, 0],
     translateZ: 0,
     opacity: [0, 1],
@@ -13,7 +13,7 @@ anime.timeline({
     duration: 450,
     delay: (el, i) => 500 + 30 * i
   }).add({
-    targets: '.loading__block__img',
+    targets: '.js-loading-block-img',
     translateX: [0, -30],
     opacity: [1, 0],
     easing: "easeInExpo",
@@ -24,8 +24,10 @@ anime.timeline({
 $(document).ready(function () {
   /* 2 秒後開始執行 */
   setTimeout(function () {
-    // 設定 loading 畫面消失
-    $('.loading').addClass('loading--fadeOut');
+    // loading 畫面消失
+    $('.js-loading').addClass('loading--fadeOut');
+    // Anime 停止
+    animation.pause();
 
     /* AOS */
     AOS.init({
@@ -34,9 +36,9 @@ $(document).ready(function () {
     });
 
     /* Animate.css */
-    $('.introProduct__item__sold').click(function (e) {
+    $('.js-introProduct-item-sold').click(function (e) {
       e.preventDefault();
-      $('.introProduct__item__sold').toggleClass('animate__shakeX');
+      $('.js-introProduct-item-sold').toggleClass('animate__shakeX');
     });
   }, time);
 

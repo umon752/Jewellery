@@ -28,52 +28,58 @@ subscription: none
                     <hr class="mt-2">
                     <form class="mb-12">
                         <div class="form-group row text-secondary">
-                            <label for="staticAccount" class="col-3 col-md-4 col-lg-2 col-form-label">會員帳號</label>
+                            <label for="staticAccount"
+                                class="col-3 col-md-4 col-lg-2 col-form-label text-nowrap">會員帳號</label>
                             <div class="col-9 col-md-8 col-lg-6">
                                 <input type="email" readonly class="form-control-plaintext text-secondary"
                                     id="staticAccount" value="email@example.com">
                             </div>
                         </div>
                         <div class="form-group row text-secondary">
-                            <label for="staticName" class="col-3 col-md-4 col-lg-2 col-form-label">會員姓名</label>
+                            <label for="staticName"
+                                class="col-3 col-md-4 col-lg-2 col-form-label text-nowrap">會員姓名</label>
                             <div class="col-9 col-md-8 col-lg-6">
                                 <input type="text" class="form-control text-secondary" id="staticName">
                             </div>
                         </div>
                         <div class="form-group row text-secondary">
-                            <label for="staticGender" class="col-3 col-md-4 col-lg-2 col-form-label">會員性別</label>
+                            <label for="staticGender"
+                                class="col-3 col-md-4 col-lg-2 col-form-label text-nowrap">會員性別</label>
                             <div class="col-9 col-md-8 col-lg-6">
-                                <select class="form-control" id="staticGender">
+                                <select class="custom-select" id="staticGender">
                                     <option>女</option>
                                     <option>男</option>
                                 </select>
                             </div>
                         </div>
                         <div class="form-group row text-secondary">
-                            <label for="staticEmail" class="col-3 col-md-4 col-lg-2 col-form-label">電子信箱</label>
+                            <label for="staticEmail"
+                                class="col-3 col-md-4 col-lg-2 col-form-label text-nowrap">電子信箱</label>
                             <div class="col-9 col-md-8 col-lg-6">
                                 <input type="email" class="form-control text-secondary" placeholder="email@example.com"
                                     id="staticEmail">
                             </div>
                         </div>
                         <div class="form-group row text-secondary">
-                            <label for="staticPhone" class="col-3 col-md-4 col-lg-2 col-form-label">手機號碼</label>
+                            <label for="staticPhone"
+                                class="col-3 col-md-4 col-lg-2 col-form-label text-nowrap">手機號碼</label>
                             <div class="col-9 col-md-8 col-lg-6">
                                 <input type="tel" class="form-control text-secondary" id="staticPhone">
                             </div>
                         </div>
                         <div class="form-group row text-secondary align-items-start">
-                            <label for="staticAddress" class="col-3 col-md-4 col-lg-2 col-form-label">聯絡地址</label>
+                            <label for="staticAddress"
+                                class="col-3 col-md-4 col-lg-2 col-form-label text-nowrap">聯絡地址</label>
                             <div class="col-9 col-md-8 col-lg-6">
-                                <select class="form-control mb-2" id="staticAddress">
+                                <select class="custom-select mb-2" id="staticAddress">
                                     <option>台灣及離島</option>
                                 </select>
                                 <div class="form-inline mb-2">
-                                    <select class="form-control mb-2 mr-sm-4 mb-sm-0" id="staticAddress">
+                                    <select class="custom-select mb-2 mr-sm-4 mb-sm-0" id="staticAddress">
                                         <option>高雄市</option>
                                         <option>屏東</option>
                                     </select>
-                                    <select class="form-control" id="staticAddress">
+                                    <select class="custom-select" id="staticAddress">
                                         <option>鹽埕區</option>
                                         <option>鼓山區</option>
                                     </select>
@@ -88,17 +94,17 @@ subscription: none
                         </div>
                         <div class="form-group row text-secondary align-items-start">
                             <label for="staticDeliveryAddress"
-                                class="col-3 col-md-4 col-lg-2 col-form-label">配送地址</label>
+                                class="col-3 col-md-4 col-lg-2 col-form-label text-nowrap">配送地址</label>
                             <div class="col-9 col-md-8 col-lg-6">
-                                <select class="form-control mb-2" id="staticDeliveryAddress">
+                                <select class="custom-select mb-2" id="staticDeliveryAddress">
                                     <option>台灣及離島</option>
                                 </select>
                                 <div class="form-inline mb-2">
-                                    <select class="form-control mb-2 mr-sm-4 mb-sm-0" id="staticDeliveryAddress">
+                                    <select class="custom-select mb-2 mr-sm-4 mb-sm-0" id="staticDeliveryAddress">
                                         <option>高雄市</option>
                                         <option>屏東</option>
                                     </select>
-                                    <select class="form-control" id="staticDeliveryAddress">
+                                    <select class="custom-select" id="staticDeliveryAddress">
                                         <option>鹽埕區</option>
                                         <option>鼓山區</option>
                                     </select>
@@ -113,19 +119,20 @@ subscription: none
                     <hr class="mt-2">
                     <form>
                         <div class="form-group row text-secondary">
-                            <label for="oldPassword" class="col-3 col-lg-2 col-form-label text-left">舊密碼</label>
+                            <label for="oldPassword"
+                                class="col-3 col-lg-2 col-form-label text-left text-nowrap">舊密碼</label>
                             <div class="col-9 col-lg-6">
                                 <input type="password" class="form-control text-secondary" id="oldPassword">
                             </div>
                         </div>
                         <div class="form-group row text-secondary">
-                            <label for="newPassword" class="col-3 col-lg-2 col-form-label">新密碼</label>
+                            <label for="newPassword" class="col-3 col-lg-2 col-form-label text-nowrap">新密碼</label>
                             <div class="col-9 col-lg-6">
                                 <input type="password" class="form-control text-secondary" id="newPassword">
                             </div>
                         </div>
                         <div class="form-group row text-secondary align-items-start">
-                            <label for="checkPassword" class="col-3 col-lg-2 col-form-label">確認密碼</label>
+                            <label for="checkPassword" class="col-3 col-lg-2 col-form-label text-nowrap">確認密碼</label>
                             <div class="col-9 col-lg-6">
                                 <input type="password" class="form-control text-secondary mb-4" id="checkPassword">
                                 <input type="submit" class="btn btn-primary text-white d-block" value="變更密碼">

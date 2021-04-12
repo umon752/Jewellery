@@ -9,8 +9,6 @@
     &__input {
         border: 2px solid $primary;
         flex-grow: 1;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
 
         @include media-breakpoint-up(md) {
             flex-grow: 0;

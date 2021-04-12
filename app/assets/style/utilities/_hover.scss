@@ -1,0 +1,13 @@
+// 覆蓋 BS4
+a.text-white:hover {
+    color: white !important;
+}
+
+
+
+/* hover */
+.hover-text-white {
+    &:hover {
+        color: white !important;
+    }
+}

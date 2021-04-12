@@ -27,16 +27,14 @@ var animation = anime.timeline({
 
 window.onload = function () {
   // Loading 畫面消失
-  setTimeout(function () {
-    loading.classList.add('loading--fadeOut'); // Anime 停止
+  loading.classList.add('loading--fadeOut'); // Anime 停止
 
-    animation.pause(); // 載入 AOS
+  animation.pause(); // 載入 AOS
 
-    AOS.init({
-      duration: 500,
-      once: true
-    });
-  }, 1200);
+  AOS.init({
+    duration: 500,
+    once: true
+  });
 }; // 只在 index 時執行
 
 

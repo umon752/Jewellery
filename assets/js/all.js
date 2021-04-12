@@ -42,23 +42,23 @@ window.onload = function () {
   AOS.init({
     duration: 500,
     once: true
-  });
-}; // 只在 index 時執行
+  }); // 只在 index 時執行
 
+  if (window.location.pathname === '/Jewellery/' || window.location.pathname === '/' || window.location.pathname.match('index')) {
+    // Animate.css 
+    var animateClass = function animateClass(e) {
+      e.preventDefault();
+      introProductSold.classList.add('animate__shakeX');
+      setTimeout(function () {
+        introProductSold.classList.remove('animate__shakeX');
+      }, 1000);
+    };
 
-if (window.location.pathname === '/Jewellery/' || window.location.pathname === '/' || window.location.pathname.match('index')) {
-  // Animate.css 
-  var animateClass = function animateClass(e) {
-    e.preventDefault();
-    introProductSold.classList.add('animate__shakeX');
-    setTimeout(function () {
-      introProductSold.classList.remove('animate__shakeX');
-    }, 1000);
-  };
-
-  var introProductSold = document.querySelector('.js-introProduct-item-sold');
-  introProductSold.addEventListener('click', animateClass);
-}
+    var introProductSold = document.querySelector('.js-introProduct-item-sold');
+    console.log("OK");
+    introProductSold.addEventListener('click', animateClass);
+  }
+};
 "use strict";
 
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }

@@ -10831,7 +10831,7 @@ input:focus {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url("../images/banner_footer.jpg");
+  background-image: url("");
   height: 600px;
   padding-bottom: 112px; }
   @media (min-width: 992px) {

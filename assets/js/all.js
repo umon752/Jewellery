@@ -23,6 +23,14 @@ var animation = anime.timeline({
   delay: function delay(el, i) {
     return 100 + 30 * i;
   }
+}); // Lazysizes 加載背景圖片
+
+document.addEventListener('lazybeforeunveil', function (e) {
+  var bg = e.target.getAttribute('data-bg');
+
+  if (bg) {
+    e.target.style.backgroundImage = 'url(' + bg + ')';
+  }
 });
 
 window.onload = function () {
@@ -35,10 +43,10 @@ window.onload = function () {
     duration: 500,
     once: true
   });
-}; // 在 index 時執行
+}; // 只在 index 時執行
 
 
-if (window.location.pathname === "/index.html") {
+if (window.location.pathname.match('/index.html')) {
   // Animate.css 
   var animateClass = function animateClass(e) {
     e.preventDefault();

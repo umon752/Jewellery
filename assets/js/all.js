@@ -1,6 +1,7 @@
 "use strict";
 
 var time = 2000;
+var loading = document.querySelector(".js-loading");
 /* Anime */
 
 var animation = anime.timeline({
@@ -25,26 +26,28 @@ var animation = anime.timeline({
     return 100 + 30 * i;
   }
 });
-$(document).ready(function () {
+
+window.onload = function () {
   /* 2 秒後開始執行 */
-  setTimeout(function () {
-    // loading 畫面消失
-    $('.js-loading').addClass('loading--fadeOut'); // Anime 停止
+  // setTimeout(function () {
+  // loading 畫面消失
+  // $('.js-loading').addClass('loading--fadeOut');
+  loading.classList.add('loading--fadeOut'); // Anime 停止
 
-    animation.pause();
-    /* AOS */
+  animation.pause();
+  /* AOS */
 
-    AOS.init({
-      duration: 500,
-      once: true
-    });
-    /* Animate.css */
+  AOS.init({
+    duration: 500,
+    once: true
+  }); // }, time);
+};
+/* Animate.css */
 
-    $('.js-introProduct-item-sold').click(function (e) {
-      e.preventDefault();
-      $('.js-introProduct-item-sold').toggleClass('animate__shakeX');
-    });
-  }, time);
+
+$('.js-introProduct-item-sold').click(function (e) {
+  e.preventDefault();
+  $('.js-introProduct-item-sold').toggleClass('animate__shakeX');
 });
 "use strict";
 

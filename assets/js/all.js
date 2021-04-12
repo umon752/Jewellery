@@ -46,7 +46,7 @@ window.onload = function () {
 }; // 只在 index 時執行
 
 
-if (window.location.pathname.match('/index.html')) {
+if (window.location.pathname.match('/Jewllery') || window.location.pathname.match('/')) {
   // Animate.css 
   var animateClass = function animateClass(e) {
     e.preventDefault();

@@ -10703,7 +10703,6 @@ a.text-white:hover {
 .hover-text-white:hover {
   color: white !important; }
 
-/* 全站設定 */
 img {
   display: block;
   max-width: 100%;
@@ -11010,7 +11009,7 @@ footer .nav-link:hover {
 .login {
   padding-top: 40px;
   padding-bottom: 106px; }
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     .login {
       padding-top: 80px;
       padding-bottom: 82px; } }
@@ -11020,7 +11019,13 @@ footer .nav-link:hover {
        object-fit: cover;
     -o-object-position: center center;
        object-position: center center; }
+    @media (min-width: 768px) {
+      .login__img {
+        height: 450px; } }
     @media (min-width: 992px) {
+      .login__img {
+        height: 600px; } }
+    @media (min-width: 1200px) {
       .login__img {
         height: 730px; } }
 

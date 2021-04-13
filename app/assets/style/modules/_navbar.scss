@@ -2,7 +2,6 @@
     .nav-link {
         &:hover {
             @include media-breakpoint-up(lg) {
-                // opacity: .6;
                 color: $secondary-dark !important;
                 background: transparent !important;
             }
